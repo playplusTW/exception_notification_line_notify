@@ -9,6 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
+gem 'exception_notification'
 gem 'exception_notification_line_notify'
 ```
 
@@ -22,7 +23,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+  Rails.application.config.middleware.use ExceptionNotification::Rack,
+  :line => {
+    :line_notify_token => ENV['LineNotifyToken'],
+  }
+```
 
 ## Development
 
