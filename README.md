@@ -22,7 +22,7 @@ Or install it yourself as:
 
     $ gem install exception_notification_line_notify
 
-## Usage
+## Usage `production.rb`
 
 ```
   Rails.application.config.middleware.use ExceptionNotification::Rack,
